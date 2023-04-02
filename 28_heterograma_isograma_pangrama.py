@@ -93,9 +93,6 @@ print(isHeterogram("hiperblanduzcós    !!w"))
 print(isIsogram("anna"))
 print(isPangram("Benjamín pidió una bebida de kiwi y fresa. Noé, sin vergüenza, la más exquisita champaña del menú"))
 
-
-
-
 """ Términos relacionados:
 Un heterograma (del griego héteros, 'diferente' y gramma, 
 'letra') es una palabra o frase que no contiene ninguna 

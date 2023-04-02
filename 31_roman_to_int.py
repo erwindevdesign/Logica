@@ -1,4 +1,25 @@
 def romanToInt(s:str) -> int:
+    
+    """ Converts a given Roman numeral string to an integer.
+    
+    Args:
+        s (str): The Roman numeral string to be converted.
+    
+    Returns:
+        int: The integer value corresponding to the given ROman numeral string.
+        
+    Example: 
+    
+        >>> romanToInt("IV")
+        4
+        
+        >>> romanToInt("DIV")
+        504
+        
+        >>> romanToInt("MM")
+        2000
+    
+    """
     roman_to_int= {
         'I': 1,
         'V': 5,
