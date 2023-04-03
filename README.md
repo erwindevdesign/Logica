@@ -2,11 +2,9 @@
 
 Este repositorio contiene ejercicios y prácticas en código de lenguaje de programación **Python** para la compresión de la lógica computacional y la mejora de habilidades de programación como los descritos a continuación.
 
-> Dentro de la **Descripción de contenido** se encontrarán conseptos bases para la compresión de los ejemplos en código.
-
 :eyes:
 
-<details><summary>Descripción de contenido </summary>
+<details style="font-weight: bold; color:#19609E"><summary>Descripción de contenido </summary>
 <p>
 
 1. [Estructuras de datos](#id1)
@@ -18,155 +16,370 @@ Este repositorio contiene ejercicios y prácticas en código de lenguaje de prog
     6. Conjunto de cadena de texto
     7. Diccionarios
 2. [Comprehension](#id2)
-    1. 
-    2. 
-    3. 
-
-- [Lambda]()
-- [Hoigher Order Function `HOF`]()
-- [map]()
-- [Inmutable]()
-- [map dict]()
-- [Filter structure]()
-- [Reduce]()
-- [Iterable]()
-- [Errors]()
-- [Exceptions]()
-- [Bugger]()
-- [Testing]()
-- [Algoritmos]()
-- [Patrones]()
+3. [Lambda](#id3)
+4. [Hoigher Order Function `HOF`](#id4)
+5. [map](#id5)
+6. [Inmutable](#id6)
+7. [map dict](#id7)
+8. [Filter structure](#id8)
+9. [Reduce](#id9)
+10. [Iterable](#id10)
+11. [Errors](#id11)
+12. [Exceptions](#id12)
+13. [Bugger](#id13)
+14. [Testing](#id14)
+15. [Algoritmos](#id15)
+16. [Patrones](#id16)
 </p>
 </details>
+
+> Dentro de la **Descripción de contenido** se encontrarán conseptos bases para la compresión de los ejemplos en código a implementar.
 
 📋
-> Cada archivo descrito en el **Indice de ejemplos en código** representa un ejemplo de código a implementar, describiendo su  estructura dentro del **docstring**.
 
-<details><summary>Indice de ejemplos en código</summary>
+<details  style="font-weight: bold; color:#19609E"><summary>Indice de ejemplos en código</summary>
 <p>
 
-[Enlace de ejemplo](https://www.ejemplo.com/ "Mensaje emergente de ejemplo")
+[01_branched_programs.py](/01_branched_programs.py "Mensaje emergente de ejemplo")
 
-01_branched_programs.py
+[02_loops.py](/02_loops.py "Mensaje emergente de ejemplo")
 
-02_loops.py
+[03_exhaustive_enumeration.py](/03_exhaustive_enumeration.py "Mensaje emergente de ejemplo")
 
-03_exhaustive_enumeration.py
+[04_approximation_solutions.py](/04_approximation_solutions.py "Mensaje emergente de ejemplo")
 
-04_approximation_solutions.py
+[05_binary_search.py](/05_binary_search.py "Mensaje emergente de ejemplo")
 
-05_binary_search.py
+[06_abstraction_decomposition.py](/06_abstraction_decomposition.py "Mensaje emergente de ejemplo")
 
-06_abstraction_decomposition.py
+[07_documentation.py](/07_documentation.py "Mensaje emergente de ejemplo")
 
-07_documentation.py
+[08_recursive_factorial.py](/08_recursive_factorial.py) 
+```
+Calculate the factorial of 'n'.
 
-08_recursive_factorial.py
+    Args:
 
-09_fibonacci.py
+        'n' [int] >= 1
+        
+    Returns:
 
-10_recursive_sum.py
+        'n!'
+    
+    |
+    V   
+    5! = 5 * (4!)
+    4! = 4 * (3!) 
+    3! = 3 * (2!)
+    2! = 2 * (1!)
+    1! = 1 ___/
+```
 
-11_recursive_list.py
+[09_fibonacci.py](/09_fibonacci.py "Mensaje emergente de ejemplo")
 
-12_object_function.py
+[10_recursive_sum.py](/10_recursive_sum.py)
 
-13_black_box.py
+```
+Suma el consecutivo en la recursión de "num"
 
-14_glass_box.py
+    Args:
+    
+        'num' (int) > 0
+    
+    Returns:
+        
+        return 'n' + 'n' - 1 ...
 
-15_exceptions.py
+    |
+    V   
+    5 + 10
+    4 + 6
+    3 + 3
+    2 + 1
+    1__/
 
-16_assert.py
+```
 
-17_lineal_complexity.py
+[11_recursive_list.py](/11_recursive_list.py )
 
-18_logarithmic_complexity.py
+```
+Recursitive created for a list reader
+    
+    Args:
+        
+        data [list] != 0
+        index [int] == 0
+    
+    Returns:
+    
+        int > 0 to 'index'
+```
 
-19_quadratic_complexity.py
+[12_object_function.py](/12_object_function.py "Mensaje emergente de ejemplo")
 
-20_binary_successive_division.py
+[13_black_box.py](/13_black_box.py "Mensaje emergente de ejemplo")
 
-21_braille_dict.py
+[14_glass_box.py](/14_glass_box.py "Mensaje emergente de ejemplo")
 
-22_decimal.py
+[15_exceptions.py](/15_exceptions.py "Mensaje emergente de ejemplo")
 
-23_two_sum.py
+[16_assert.py](/16_assert.py "Mensaje emergente de ejemplo")
 
-24_add_two_numbers.py
+[17_lineal_complexity.py](/17_lineal_complexity.py "Mensaje emergente de ejemplo")
 
-25_palindrome_number.py
+[18_logarithmic_complexity.py](/18_logarithmic_complexity.py "Mensaje emergente de ejemplo")
 
-26_fizzbuzz.py
+[19_quadratic_complexity.py](/19_quadratic_complexity.py "Mensaje emergente de ejemplo")
 
-27_hacker_language.py
+[20_binary_successive_division.py](/20_binary_successive_division.py )
 
-28_heterograma_isograma_pangrama.py
+```
+Numeric conversion from decimal to binary.
+    
+    Args:
+        decimal [int]: decimal integer number. != 0
+        
+    Returns: 
+        binary [str]: string that represents the binary conversion.    
+        
+    Example:
+    
+        13 % 2 = 1 [6.5] : {6}
+         6 % 2 = 0   [3] : {3}
+         3 % 2 = 1 [1.5] : {1}
+         1 % 2 = 1 [0.5] : {0}
+         0 _____/ # 1101
+```
 
-29_url_params.py
+[21_braille_dict.py](/21_braille_dict.py )
 
-30_friday_13.py
+[22_decimal.py](/22_decimal.py )
 
-31_roman_to_int.py
+```
+Numeric conversion from binary to decimal
+    
+    Args:
+        binary [iterable]: iterable binary number.
+        
+    Returns:
+        decimal [int]: decimal integer number.
+        
+    Example:
+        
+        # 1101
+        
+         1 x 2 + 1 is:  1
+         3 x 2 + 1 is:  3
+         6 x 2 + 0 is:  6
+        13 x 2 + 1 is: 13 <--
+```
 
-32_int_to_roman.py
+[23_two_sum.py](/23_two_sum.py )
 
-33_longest_common_prefix.py
+```
+Return an array with the indices of two
+numbers in the list `nums` that add up to 
+the `target`. If there are no two numbers
+that meet the condition, it returns `None`.
+    
+    Args:
+        
+        - nums [ list ] : list of integers in which 
+        to search for the two numbers.
+        
+        - target [ int ] : integer that represents 
+        the sum goal.
+    
+    Returns:
+    
+        - result [ array | None ] : a list with two integers 
+        representing the indices of the two numbers
+        that add up to `target`, or `None` if they
+        are not found.
+```
+
+[24_add_two_numbers.py](/24_add_two_numbers.py )
+
+[25_palindrome_number.py](/25_palindrome_number.py )
+
+```
+Determines whether an integer is a palindrome or not.
+    
+    A palindrome is a number that remains the same when its digit are reversed.
+    
+    Args:
+        x (int): The Integer to chsck for palindomicity.
+        
+    Returns:
+        True | False (bool): Tru if `x` is a palindrome, False otherwise.
+```
+
+[26_fizzbuzz.py](/26_fizzbuzz.py )
+
+```
+This function prints the numbers from 1 to 100, 
+replacing multiples of 3 with the word "fizz",
+multiples of 5 with the word "buzz, and multiples
+of both 3 and 5 with the word "fizzbuzz".
+```
+
+[27_hacker_language.py](/27_hacker_language.py )
+
+```
+Translates a given string of text to "leet" language 
+    (or "1337" language). a form of online slang that 
+    replaces standard letters with numbers, symbols, or 
+    other characters that resemble the letters in spelling.
+    
+    Parameters: 
+        text (str): A string of text to be translated.
+        
+    Returns: 
+        leet_text (str): A translated string of text in "leet" language.
+```
+
+[28_heterograma_isograma_pangrama.py](/28_heterograma_isograma_pangrama.py )
+
+```
+Counts the frequency of each character in the input text string.
+    
+    Args: 
+        text (str): The input text to count the characters.
+        
+    Returns:
+        char_counter (dict): A dictionary containing each character in 
+        the input text as a key and its frequency as value.
+```
+
+[29_url_params.py](/29_url_params.py )
+
+```
+This code extracts the parameters from a URL using both 
+split method and regular expression. The split methods separates
+the URL into components separated by `&`, and then it looks for 
+components containing a parameter using the `=` character. If
+a parameter is found, it is extrated and printed. The regular 
+expression method uses the `re.findall()` funtion to search 
+parameter values using a regular expression pattern. The 
+pattern matches strings that start with `=` and contain one or 
+more alphanumeric characters, dots, underscores, percentage 
+signs, or hyphens.
+
+Returns: 
+    - None
+```
+
+[30_friday_13.py](/30_friday_13.py )
+
+```
+Determines if given year and month contain a Friday the 13th.
+    
+    Args:
+        - year (int): The year to check.
+        - month (int): The month to check.
+        
+    Returns:
+        - bool: True if the given year and month contain a Friday the 13th. False otherwise.
+```
+
+[31_roman_to_int.py](/31_roman_to_int.py )
+
+```
+Converts a given Roman numeral string to an integer.
+    
+    Args:
+        s (str): The Roman numeral string to be converted.
+    
+    Returns:
+        int: The integer value corresponding to the given ROman numeral string.
+```
+
+[32_int_to_roman.py](/32_int_to_roman.py )
+
+```
+ Convert an integer to a Roman numeral string.
+    
+    Args: 
+        num (int): The integer to convert.
+    
+    Returns:
+        str: The Roman numeral string representing the given integer.
+```
+
+[33_longest_common_prefix.py](/33_longest_common_prefix.py)
+
+```
+This function finds the longest common prefix string amongts a list of strign.
+    
+    Args:
+        - list [str]: A list of strings to search for the longest commond prefix.
+        
+    Returns:
+        - str: The longest commond prefix string among the input strings.
+```
 
 </p>
 </details>
 
-### Estructura de datos <a name='id1'></a>
+
+> Cada archivo descrito en el **Indice de ejemplos en código** representa un fragmento de código a implementar, describiendo su  estructura dentro de su propio  **docstring**.
+
+## Estructura de datos <a name='id1'></a>
 
 Python hace uso de varias estructuras de datos integradas en el lenguaje, entre ellas se encuentran:
 
 
-Listas: Son una colección ordenada y modificable de elementos que pueden ser de diferentes tipos de datos. Se definen usando corchetes [] y los elementos están separados por comas.
+1. **Listas**
+
+Son una colección ordenada y modificable de elementos que pueden ser de diferentes tipos de datos. Se definen usando corchetes `[ ]` y los elementos están separados por comas `,`.
 
 Ejemplo:
 
-# Lista de enteros
-    my_list = [1, 2, 3, 4, 5]
-
-# Lista de strings
+#### Lista de enteros
+```
+my_list = [1, 2, 3, 4, 5]
+```
+#### Lista de strings
+```
 fruits = ["apple", "banana", "cherry", "orange"]
+```
+2. **Tuplas**
 
-    Tuplas: Son una colección ordenada e inmutable de elementos que pueden ser de diferentes tipos de datos. Se definen usando paréntesis () y los elementos están separados por comas.
+Son una colección ordenada e inmutable de elementos que pueden ser de diferentes tipos de datos. Se definen usando paréntesis `( )` y los elementos están separados por comas `,`.
 
-Ejemplo:
-
-makefile
-
-# Tupla de enteros
+#### Tupla de enteros
+```
 my_tuple = (1, 2, 3, 4, 5)
-
-# Tupla de strings
+```
+#### Tupla de strings
+```
 fruits = ("apple", "banana", "cherry", "orange")
+```
+3. **Conjuntos (Sets)**
 
-    Conjuntos (Sets): Son una colección desordenada y no indexada de elementos únicos. Se definen usando llaves {} o la función set().
+Son una colección desordenada y no indexada de elementos únicos. Se definen usando llaves {} o la función set().
 
-Ejemplo:
-
-makefile
-
-# Set de enteros
+#### Set de enteros
+```
 my_set = {1, 2, 3, 4, 5}
-
-# Set de strings
+```
+#### Set de strings
+```
 fruits = set(["apple", "banana", "cherry", "orange"])
+```
+  
+4. **Diccionarios**
 
-    Diccionarios: Son una colección desordenada y modificable de pares de clave-valor. Se definen usando llaves {} y los elementos están separados por comas, cada par de clave-valor está separado por dos puntos :.
+Son una colección desordenada y modificable de pares de clave-valor. Se definen usando llaves {} y los elementos están separados por comas, cada par de clave-valor está separado por dos puntos :.
 
-Ejemplo:
-
-makefile
-
-# Diccionario de notas de estudiantes
+#### Diccionario (clave - valor)
+```
 grades = {"Alice": 80, "Bob": 90, "Charlie": 70}
-
-# Diccionario de información de usuarios
+```
+#### Diccionario (clave - valor)
+```
 user_info = {"name": "John", "age": 30, "city": "New York"}
-
+```
 
 
 
